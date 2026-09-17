@@ -5,3 +5,4 @@ data/raw/*
 data/processed/*
 models/*
 .env
+node_modules/
