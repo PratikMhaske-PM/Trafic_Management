@@ -72,6 +72,7 @@ export default function App() {
       const start = points[0];
       const end = points[1];
       
+      const API_URL = "https://trafic-management-5.onrender.com/";
       const osrmUrl = `https://router.project-osrm.org/route/v1/driving/${start.lng},${start.lat};${end.lng},${end.lat}?alternatives=true&overview=full&geometries=geojson`;
       const response = await fetch(osrmUrl);
       const data = await response.json();
